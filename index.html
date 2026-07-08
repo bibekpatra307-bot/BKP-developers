@@ -3,1389 +3,429 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>BKP Developers — Innovate. Develop. Deliver.</title>
+    <title>BKP Developers – Innovate. Develop. Deliver. | Software Company</title>
+    <meta name="description" content="BKP Developers is a leading software development company delivering innovative, reliable, and high-quality digital solutions. Website, mobile app, AI & more." />
+    <meta name="keywords" content="software development, web development, mobile app development, AI solutions, UI/UX design, e-commerce, digital marketing, BKP Developers" />
+    <link rel="canonical" href="https://bkpdevelopers.com/" />
+    <meta name="robots" content="index, follow" />
 
-    <!-- Google Fonts -->
+    <!-- Open Graph -->
+    <meta property="og:title" content="BKP Developers – Innovate. Develop. Deliver." />
+    <meta property="og:description" content="We build modern websites, mobile apps & intelligent digital solutions that drive real business growth." />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://bkpdevelopers.com/" />
+    <meta property="og:image" content="https://bkpdevelopers.com/assets/images/og-image.jpg" />
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="BKP Developers – Innovate. Develop. Deliver." />
+    <meta name="twitter:description" content="We build modern websites, mobile apps & intelligent digital solutions that drive real business growth." />
+    <meta name="twitter:image" content="https://bkpdevelopers.com/assets/images/og-image.jpg" />
+
+    <!-- Schema.org JSON-LD -->
+    <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "Organization",
+            "name": "BKP Developers",
+            "url": "https://bkpdevelopers.com",
+            "logo": "https://bkpdevelopers.com/assets/images/logo.png",
+            "description": "Leading software development company delivering innovative digital solutions.",
+            "address": {
+                "@type": "PostalAddress",
+                "addressLocality": "Indore",
+                "addressRegion": "Madhya Pradesh",
+                "addressCountry": "India"
+            },
+            "contactPoint": {
+                "@type": "ContactPoint",
+                "telephone": "+91-1234567890",
+                "contactType": "Sales",
+                "availableLanguage": ["English", "Hindi"]
+            },
+            "sameAs": [
+                "https://www.linkedin.com/company/bkpdevelopers",
+                "https://twitter.com/bkpdevelopers",
+                "https://www.facebook.com/bkpdevelopers"
+            ]
+        }
+    </script>
+    <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "LocalBusiness",
+            "name": "BKP Developers",
+            "image": "https://bkpdevelopers.com/assets/images/office.webp",
+            "telephone": "+91-1234567890",
+            "email": "hello@bkpdevelopers.com",
+            "address": {
+                "@type": "PostalAddress",
+                "streetAddress": "IT Park, Indore",
+                "addressLocality": "Indore",
+                "addressRegion": "Madhya Pradesh",
+                "postalCode": "452001",
+                "addressCountry": "India"
+            },
+            "openingHours": "Mo-Sa 10:00-19:00",
+            "priceRange": "$$"
+        }
+    </script>
+    <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "WebSite",
+            "name": "BKP Developers",
+            "url": "https://bkpdevelopers.com",
+            "potentialAction": {
+                "@type": "SearchAction",
+                "target": "https://bkpdevelopers.com/search?q={search_term_string}",
+                "query-input": "required name=search_term_string"
+            }
+        }
+    </script>
+    <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "BreadcrumbList",
+            "itemListElement": [{
+                "@type": "ListItem",
+                "position": 1,
+                "name": "Home",
+                "item": "https://bkpdevelopers.com/"
+            }]
+        }
+    </script>
+
+    <!-- Favicon -->
+    <link rel="icon" href="assets/images/favicon.png" type="image/png" />
+    <link rel="apple-touch-icon" href="assets/images/apple-touch-icon.png" />
+    <link rel="manifest" href="site.webmanifest" />
+    <meta name="theme-color" content="#0b1a3a" />
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="stylesheet" href="assets/css/animations.css" />
+    <link rel="stylesheet" href="assets/css/responsive.css" />
+
+    <!-- Preconnect for performance -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,600;14..32,700;14..32,800;14..32,900&display=swap" rel="stylesheet" />
-
-    <!-- Font Awesome 6 (Free) -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
-
-    <style>
-        /* ===== RESET & BASE ===== */
-        *,
-        *::before,
-        *::after {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        :root {
-            --primary: #6c3df4;
-            --primary-light: #8b6cf7;
-            --primary-dark: #5128c7;
-            --secondary: #0b1124;
-            --bg-light: #f8faff;
-            --text-dark: #0b1124;
-            --text-gray: #5a6473;
-            --text-light: #8892a0;
-            --white: #ffffff;
-            --shadow: 0 20px 60px rgba(108, 61, 244, 0.12);
-            --shadow-hover: 0 30px 80px rgba(108, 61, 244, 0.20);
-            --radius: 16px;
-            --radius-sm: 10px;
-            --transition: 0.35s cubic-bezier(0.25, 0.46, 0.45, 0.94);
-            --font: 'Inter', sans-serif;
-        }
-
-        html {
-            scroll-behavior: smooth;
-        }
-
-        body {
-            font-family: var(--font);
-            background: var(--bg-light);
-            color: var(--text-dark);
-            line-height: 1.6;
-            overflow-x: hidden;
-        }
-
-        a {
-            text-decoration: none;
-            color: inherit;
-        }
-
-        ul {
-            list-style: none;
-        }
-
-        img {
-            max-width: 100%;
-            display: block;
-        }
-
-        .container {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 0 24px;
-        }
-
-        /* ===== BUTTONS ===== */
-        .btn-primary {
-            display: inline-flex;
-            align-items: center;
-            gap: 10px;
-            background: var(--primary);
-            color: #fff;
-            font-weight: 600;
-            font-size: 0.95rem;
-            padding: 14px 32px;
-            border-radius: 50px;
-            border: none;
-            cursor: pointer;
-            transition: var(--transition);
-            box-shadow: 0 8px 28px rgba(108, 61, 244, 0.30);
-        }
-        .btn-primary:hover {
-            background: var(--primary-dark);
-            transform: translateY(-3px);
-            box-shadow: 0 14px 40px rgba(108, 61, 244, 0.40);
-        }
-
-        .btn-secondary {
-            display: inline-flex;
-            align-items: center;
-            gap: 10px;
-            background: transparent;
-            color: var(--text-dark);
-            font-weight: 600;
-            font-size: 0.95rem;
-            padding: 14px 32px;
-            border-radius: 50px;
-            border: 2px solid #d0d7e6;
-            cursor: pointer;
-            transition: var(--transition);
-        }
-        .btn-secondary:hover {
-            border-color: var(--primary);
-            color: var(--primary);
-            transform: translateY(-3px);
-            box-shadow: 0 8px 28px rgba(108, 61, 244, 0.08);
-        }
-
-        /* ===== HEADER / NAV ===== */
-        .header {
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            z-index: 1000;
-            background: rgba(255, 255, 255, 0.72);
-            backdrop-filter: blur(16px) saturate(180%);
-            -webkit-backdrop-filter: blur(16px) saturate(180%);
-            border-bottom: 1px solid rgba(255, 255, 255, 0.30);
-            transition: var(--transition);
-        }
-        .header.scrolled {
-            background: rgba(255, 255, 255, 0.92);
-            box-shadow: 0 4px 30px rgba(0, 0, 0, 0.06);
-        }
-
-        .nav {
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            height: 76px;
-        }
-
-        .logo {
-            display: flex;
-            align-items: center;
-            gap: 10px;
-            font-weight: 800;
-            font-size: 1.35rem;
-            letter-spacing: -0.5px;
-            color: var(--text-dark);
-        }
-        .logo span {
-            color: var(--primary);
-        }
-        .logo i {
-            font-size: 1.6rem;
-            color: var(--primary);
-        }
-
-        .nav-links {
-            display: flex;
-            align-items: center;
-            gap: 32px;
-        }
-        .nav-links a {
-            font-weight: 500;
-            font-size: 0.92rem;
-            color: var(--text-gray);
-            transition: var(--transition);
-            position: relative;
-        }
-        .nav-links a::after {
-            content: '';
-            position: absolute;
-            left: 0;
-            bottom: -4px;
-            width: 0;
-            height: 2px;
-            background: var(--primary);
-            transition: var(--transition);
-        }
-        .nav-links a:hover {
-            color: var(--primary);
-        }
-        .nav-links a:hover::after {
-            width: 100%;
-        }
-
-        .nav-cta {
-            margin-left: 8px;
-        }
-        .nav-cta .btn-primary {
-            padding: 10px 24px;
-            font-size: 0.85rem;
-            box-shadow: 0 6px 20px rgba(108, 61, 244, 0.25);
-        }
-
-        /* Mobile toggle */
-        .menu-toggle {
-            display: none;
-            flex-direction: column;
-            gap: 5px;
-            cursor: pointer;
-            padding: 4px;
-        }
-        .menu-toggle span {
-            display: block;
-            width: 26px;
-            height: 2.5px;
-            background: var(--text-dark);
-            border-radius: 4px;
-            transition: var(--transition);
-        }
-        .menu-toggle.active span:nth-child(1) {
-            transform: rotate(45deg) translate(5px, 5px);
-        }
-        .menu-toggle.active span:nth-child(2) {
-            opacity: 0;
-        }
-        .menu-toggle.active span:nth-child(3) {
-            transform: rotate(-45deg) translate(5px, -5px);
-        }
-
-        /* ===== HERO ===== */
-        .hero {
-            padding: 160px 0 100px;
-            position: relative;
-            overflow: hidden;
-        }
-        .hero::before {
-            content: '';
-            position: absolute;
-            top: -40%;
-            right: -20%;
-            width: 700px;
-            height: 700px;
-            background: radial-gradient(circle, rgba(108, 61, 244, 0.06) 0%, transparent 70%);
-            border-radius: 50%;
-            pointer-events: none;
-        }
-        .hero::after {
-            content: '';
-            position: absolute;
-            bottom: -30%;
-            left: -10%;
-            width: 500px;
-            height: 500px;
-            background: radial-gradient(circle, rgba(108, 61, 244, 0.04) 0%, transparent 70%);
-            border-radius: 50%;
-            pointer-events: none;
-        }
-
-        .hero-grid {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 60px;
-            align-items: center;
-            position: relative;
-            z-index: 2;
-        }
-
-        .hero-badge {
-            display: inline-flex;
-            align-items: center;
-            gap: 8px;
-            background: rgba(108, 61, 244, 0.10);
-            color: var(--primary);
-            font-weight: 600;
-            font-size: 0.82rem;
-            padding: 6px 18px 6px 8px;
-            border-radius: 50px;
-            margin-bottom: 20px;
-            letter-spacing: 0.3px;
-        }
-        .hero-badge i {
-            background: var(--primary);
-            color: #fff;
-            border-radius: 50%;
-            padding: 4px;
-            font-size: 0.6rem;
-        }
-
-        .hero h1 {
-            font-size: 3.4rem;
-            font-weight: 900;
-            line-height: 1.12;
-            letter-spacing: -1.5px;
-            margin-bottom: 16px;
-        }
-        .hero h1 .highlight {
-            background: linear-gradient(135deg, var(--primary), #a78bfa);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            background-clip: text;
-        }
-
-        .hero p {
-            font-size: 1.1rem;
-            color: var(--text-gray);
-            max-width: 480px;
-            margin-bottom: 32px;
-            line-height: 1.7;
-        }
-
-        .hero-actions {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 16px;
-            margin-bottom: 48px;
-        }
-
-        .hero-stats {
-            display: flex;
-            gap: 48px;
-            padding-top: 16px;
-            border-top: 2px solid rgba(108, 61, 244, 0.08);
-        }
-        .hero-stats .stat h3 {
-            font-size: 1.8rem;
-            font-weight: 800;
-            color: var(--text-dark);
-        }
-        .hero-stats .stat h3 span {
-            color: var(--primary);
-        }
-        .hero-stats .stat p {
-            font-size: 0.85rem;
-            color: var(--text-light);
-            margin: 0;
-        }
-
-        /* Hero right — visual */
-        .hero-visual {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            position: relative;
-        }
-        .hero-visual .orb {
-            width: 400px;
-            height: 400px;
-            border-radius: 50%;
-            background: linear-gradient(135deg, rgba(108, 61, 244, 0.12), rgba(167, 139, 250, 0.06));
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            position: relative;
-            animation: float 6s ease-in-out infinite;
-        }
-        .hero-visual .orb-inner {
-            width: 240px;
-            height: 240px;
-            border-radius: 50%;
-            background: linear-gradient(135deg, var(--primary), #a78bfa);
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            box-shadow: 0 40px 80px rgba(108, 61, 244, 0.25);
-            color: #fff;
-            font-size: 5rem;
-            font-weight: 900;
-        }
-        .hero-visual .orb-inner i {
-            font-size: 6rem;
-        }
-        .hero-visual .floating-tag {
-            position: absolute;
-            background: var(--white);
-            padding: 10px 20px;
-            border-radius: 50px;
-            font-weight: 600;
-            font-size: 0.85rem;
-            box-shadow: var(--shadow);
-            display: flex;
-            align-items: center;
-            gap: 8px;
-            animation: float 4s ease-in-out infinite reverse;
-        }
-        .hero-visual .floating-tag:nth-child(2) {
-            top: 10%;
-            right: 0;
-            animation-delay: 0.5s;
-        }
-        .hero-visual .floating-tag:nth-child(3) {
-            bottom: 20%;
-            left: -10%;
-            animation-delay: 1s;
-        }
-        .hero-visual .floating-tag i {
-            color: var(--primary);
-        }
-
-        @keyframes float {
-            0%,
-            100% {
-                transform: translateY(0px);
-            }
-            50% {
-                transform: translateY(-20px);
-            }
-        }
-
-        /* ===== SERVICES ===== */
-        .services {
-            padding: 100px 0 80px;
-            background: var(--white);
-        }
-
-        .section-label {
-            display: inline-flex;
-            align-items: center;
-            gap: 8px;
-            font-weight: 700;
-            font-size: 0.82rem;
-            letter-spacing: 0.5px;
-            text-transform: uppercase;
-            color: var(--primary);
-            margin-bottom: 12px;
-        }
-        .section-label i {
-            font-size: 0.7rem;
-        }
-
-        .section-title {
-            font-size: 2.6rem;
-            font-weight: 800;
-            letter-spacing: -1px;
-            line-height: 1.2;
-            margin-bottom: 12px;
-        }
-        .section-sub {
-            font-size: 1.05rem;
-            color: var(--text-gray);
-            max-width: 560px;
-        }
-
-        .services-grid {
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            gap: 28px;
-            margin-top: 48px;
-        }
-
-        .service-card {
-            background: var(--bg-light);
-            padding: 36px 28px 32px;
-            border-radius: var(--radius);
-            transition: var(--transition);
-            border: 1px solid transparent;
-            position: relative;
-            overflow: hidden;
-        }
-        .service-card::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 4px;
-            background: linear-gradient(90deg, var(--primary), #a78bfa);
-            opacity: 0;
-            transition: var(--transition);
-        }
-        .service-card:hover {
-            transform: translateY(-8px);
-            border-color: rgba(108, 61, 244, 0.12);
-            box-shadow: var(--shadow-hover);
-            background: var(--white);
-        }
-        .service-card:hover::before {
-            opacity: 1;
-        }
-
-        .service-card .icon {
-            width: 56px;
-            height: 56px;
-            border-radius: 14px;
-            background: rgba(108, 61, 244, 0.08);
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 1.5rem;
-            color: var(--primary);
-            margin-bottom: 18px;
-            transition: var(--transition);
-        }
-        .service-card:hover .icon {
-            background: var(--primary);
-            color: #fff;
-            transform: scale(1.05);
-        }
-
-        .service-card h3 {
-            font-size: 1.15rem;
-            font-weight: 700;
-            margin-bottom: 8px;
-        }
-        .service-card p {
-            color: var(--text-gray);
-            font-size: 0.92rem;
-            line-height: 1.6;
-            margin-bottom: 16px;
-        }
-        .service-card .learn-more {
-            font-weight: 600;
-            font-size: 0.85rem;
-            color: var(--primary);
-            display: inline-flex;
-            align-items: center;
-            gap: 6px;
-            transition: var(--transition);
-        }
-        .service-card .learn-more:hover {
-            gap: 12px;
-        }
-
-        /* ===== STATS BAR ===== */
-        .stats-bar {
-            padding: 60px 0;
-            background: var(--secondary);
-            color: #fff;
-        }
-        .stats-bar .container {
-            display: grid;
-            grid-template-columns: repeat(4, 1fr);
-            gap: 32px;
-            text-align: center;
-        }
-        .stats-bar .stat-item h3 {
-            font-size: 2.8rem;
-            font-weight: 800;
-            letter-spacing: -1px;
-        }
-        .stats-bar .stat-item h3 span {
-            color: #a78bfa;
-        }
-        .stats-bar .stat-item p {
-            color: rgba(255, 255, 255, 0.60);
-            font-size: 0.95rem;
-            margin-top: 4px;
-        }
-
-        /* ===== ABOUT ===== */
-        .about {
-            padding: 100px 0 80px;
-            background: var(--bg-light);
-        }
-        .about-grid {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 60px;
-            align-items: center;
-        }
-        .about-content .section-title {
-            margin-bottom: 16px;
-        }
-        .about-content p {
-            color: var(--text-gray);
-            font-size: 1.05rem;
-            line-height: 1.7;
-            margin-bottom: 24px;
-        }
-        .about-features {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 16px 32px;
-            margin-top: 8px;
-        }
-        .about-features li {
-            display: flex;
-            align-items: center;
-            gap: 10px;
-            font-weight: 500;
-        }
-        .about-features li i {
-            color: var(--primary);
-            font-size: 1.1rem;
-        }
-
-        .about-visual {
-            background: linear-gradient(135deg, rgba(108, 61, 244, 0.06), rgba(167, 139, 250, 0.04));
-            border-radius: var(--radius);
-            padding: 40px;
-            display: flex;
-            flex-direction: column;
-            gap: 20px;
-            border: 1px solid rgba(108, 61, 244, 0.06);
-        }
-        .about-visual .block {
-            background: var(--white);
-            padding: 20px 24px;
-            border-radius: var(--radius-sm);
-            box-shadow: var(--shadow);
-            display: flex;
-            align-items: center;
-            gap: 16px;
-            transition: var(--transition);
-        }
-        .about-visual .block:hover {
-            transform: translateX(6px);
-            box-shadow: var(--shadow-hover);
-        }
-        .about-visual .block i {
-            font-size: 1.8rem;
-            color: var(--primary);
-            width: 48px;
-            text-align: center;
-        }
-        .about-visual .block h4 {
-            font-weight: 700;
-            font-size: 1rem;
-        }
-        .about-visual .block p {
-            color: var(--text-gray);
-            font-size: 0.85rem;
-            margin: 0;
-        }
-
-        /* ===== PORTFOLIO ===== */
-        .portfolio {
-            padding: 100px 0 80px;
-            background: var(--white);
-        }
-        .portfolio .section-head {
-            display: flex;
-            justify-content: space-between;
-            align-items: flex-end;
-            flex-wrap: wrap;
-            gap: 20px;
-        }
-        .portfolio .section-head .section-sub {
-            margin: 0;
-        }
-
-        .portfolio-grid {
-            display: grid;
-            grid-template-columns: repeat(4, 1fr);
-            gap: 24px;
-            margin-top: 48px;
-        }
-
-        .project-card {
-            background: var(--bg-light);
-            border-radius: var(--radius);
-            overflow: hidden;
-            transition: var(--transition);
-            border: 1px solid transparent;
-        }
-        .project-card:hover {
-            transform: translateY(-6px);
-            border-color: rgba(108, 61, 244, 0.10);
-            box-shadow: var(--shadow);
-        }
-        .project-card .thumb {
-            height: 180px;
-            background: linear-gradient(135deg, rgba(108, 61, 244, 0.10), rgba(167, 139, 250, 0.06));
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 2.8rem;
-            color: var(--primary);
-            font-weight: 700;
-        }
-        .project-card .info {
-            padding: 20px 22px 24px;
-        }
-        .project-card .info h4 {
-            font-weight: 700;
-            font-size: 1.05rem;
-            margin-bottom: 4px;
-        }
-        .project-card .info p {
-            color: var(--text-gray);
-            font-size: 0.85rem;
-            margin-bottom: 10px;
-        }
-        .project-card .info .tag {
-            display: inline-block;
-            background: rgba(108, 61, 244, 0.08);
-            color: var(--primary);
-            font-size: 0.7rem;
-            font-weight: 600;
-            padding: 3px 12px;
-            border-radius: 50px;
-        }
-
-        .view-all-wrap {
-            text-align: center;
-            margin-top: 44px;
-        }
-
-        /* ===== CTA ===== */
-        .cta-section {
-            padding: 80px 0;
-            background: var(--secondary);
-            color: #fff;
-            text-align: center;
-        }
-        .cta-section h2 {
-            font-size: 2.6rem;
-            font-weight: 800;
-            letter-spacing: -1px;
-            margin-bottom: 12px;
-        }
-        .cta-section p {
-            color: rgba(255, 255, 255, 0.65);
-            font-size: 1.1rem;
-            max-width: 520px;
-            margin: 0 auto 32px;
-        }
-        .cta-section .btn-primary {
-            background: #fff;
-            color: var(--primary);
-            box-shadow: 0 8px 30px rgba(0, 0, 0, 0.15);
-        }
-        .cta-section .btn-primary:hover {
-            background: #f0f0ff;
-            transform: translateY(-3px);
-            box-shadow: 0 14px 40px rgba(0, 0, 0, 0.20);
-        }
-
-        /* ===== FOOTER ===== */
-        .footer {
-            background: #060b1a;
-            color: rgba(255, 255, 255, 0.70);
-            padding: 60px 0 30px;
-        }
-        .footer-grid {
-            display: grid;
-            grid-template-columns: 2fr 1fr 1fr 1.2fr;
-            gap: 40px;
-            margin-bottom: 40px;
-        }
-        .footer-brand .logo {
-            color: #fff;
-            margin-bottom: 14px;
-        }
-        .footer-brand p {
-            font-size: 0.92rem;
-            max-width: 300px;
-            line-height: 1.7;
-        }
-        .footer-col h4 {
-            color: #fff;
-            font-weight: 700;
-            font-size: 1rem;
-            margin-bottom: 16px;
-        }
-        .footer-col ul li {
-            margin-bottom: 10px;
-        }
-        .footer-col ul li a {
-            font-size: 0.9rem;
-            transition: var(--transition);
-        }
-        .footer-col ul li a:hover {
-            color: #a78bfa;
-        }
-        .footer-contact li {
-            display: flex;
-            align-items: center;
-            gap: 12px;
-            font-size: 0.9rem;
-        }
-        .footer-contact li i {
-            width: 20px;
-            color: #a78bfa;
-        }
-
-        .footer-bottom {
-            border-top: 1px solid rgba(255, 255, 255, 0.06);
-            padding-top: 24px;
-            display: flex;
-            justify-content: space-between;
-            flex-wrap: wrap;
-            gap: 16px;
-            font-size: 0.85rem;
-        }
-        .footer-bottom .socials {
-            display: flex;
-            gap: 16px;
-        }
-        .footer-bottom .socials a {
-            width: 36px;
-            height: 36px;
-            border-radius: 50%;
-            background: rgba(255, 255, 255, 0.04);
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            transition: var(--transition);
-        }
-        .footer-bottom .socials a:hover {
-            background: var(--primary);
-            color: #fff;
-            transform: translateY(-3px);
-        }
-
-        /* ===== RESPONSIVE ===== */
-        @media (max-width: 1024px) {
-            .hero h1 {
-                font-size: 2.8rem;
-            }
-            .services-grid {
-                grid-template-columns: repeat(2, 1fr);
-            }
-            .portfolio-grid {
-                grid-template-columns: repeat(2, 1fr);
-            }
-            .hero-visual .orb {
-                width: 300px;
-                height: 300px;
-            }
-            .hero-visual .orb-inner {
-                width: 180px;
-                height: 180px;
-                font-size: 3.5rem;
-            }
-            .hero-visual .orb-inner i {
-                font-size: 4rem;
-            }
-        }
-
-        @media (max-width: 900px) {
-            .hero-grid {
-                grid-template-columns: 1fr;
-                text-align: center;
-            }
-            .hero p {
-                margin-left: auto;
-                margin-right: auto;
-            }
-            .hero-actions {
-                justify-content: center;
-            }
-            .hero-stats {
-                justify-content: center;
-            }
-            .hero-visual .orb {
-                width: 240px;
-                height: 240px;
-            }
-            .hero-visual .orb-inner {
-                width: 140px;
-                height: 140px;
-                font-size: 2.8rem;
-            }
-            .hero-visual .orb-inner i {
-                font-size: 3rem;
-            }
-            .hero-visual .floating-tag {
-                display: none;
-            }
-
-            .about-grid {
-                grid-template-columns: 1fr;
-            }
-            .footer-grid {
-                grid-template-columns: 1fr 1fr;
-            }
-            .stats-bar .container {
-                grid-template-columns: repeat(2, 1fr);
-            }
-        }
-
-        @media (max-width: 768px) {
-            .nav-links {
-                position: fixed;
-                top: 76px;
-                left: 0;
-                width: 100%;
-                background: rgba(255, 255, 255, 0.96);
-                backdrop-filter: blur(12px);
-                flex-direction: column;
-                padding: 32px 24px;
-                gap: 20px;
-                box-shadow: 0 20px 40px rgba(0, 0, 0, 0.06);
-                transform: translateY(-120%);
-                transition: var(--transition);
-                opacity: 0;
-                pointer-events: none;
-            }
-            .nav-links.open {
-                transform: translateY(0);
-                opacity: 1;
-                pointer-events: all;
-            }
-            .nav-links .nav-cta {
-                margin: 0;
-            }
-            .menu-toggle {
-                display: flex;
-            }
-
-            .hero {
-                padding: 120px 0 60px;
-            }
-            .hero h1 {
-                font-size: 2.2rem;
-            }
-            .section-title {
-                font-size: 2rem;
-            }
-            .services-grid {
-                grid-template-columns: 1fr;
-            }
-            .portfolio-grid {
-                grid-template-columns: 1fr;
-            }
-            .footer-grid {
-                grid-template-columns: 1fr;
-                gap: 24px;
-            }
-            .footer-bottom {
-                flex-direction: column;
-                align-items: center;
-                text-align: center;
-            }
-            .hero-stats {
-                flex-wrap: wrap;
-                gap: 24px;
-                justify-content: center;
-            }
-            .about-features {
-                grid-template-columns: 1fr;
-            }
-            .stats-bar .container {
-                grid-template-columns: 1fr 1fr;
-                gap: 20px;
-            }
-            .stats-bar .stat-item h3 {
-                font-size: 2rem;
-            }
-            .cta-section h2 {
-                font-size: 2rem;
-            }
-        }
-
-        @media (max-width: 480px) {
-            .hero h1 {
-                font-size: 1.8rem;
-            }
-            .hero-actions {
-                flex-direction: column;
-                align-items: center;
-            }
-            .hero-actions .btn-primary,
-            .hero-actions .btn-secondary {
-                width: 100%;
-                justify-content: center;
-            }
-            .section-title {
-                font-size: 1.6rem;
-            }
-            .stats-bar .container {
-                grid-template-columns: 1fr 1fr;
-                gap: 16px;
-            }
-        }
-    </style>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
 </head>
 <body>
 
-    <!-- ===== HEADER ===== -->
+    <!-- ============================== -->
+    <!-- HEADER / NAVIGATION            -->
+    <!-- ============================== -->
     <header class="header" id="header">
-        <div class="container nav">
-            <a href="#" class="logo">
-                <i class="fas fa-cube"></i> BKP<span>Developers</span>
+        <div class="container header-container">
+            <a href="index.html" class="logo">
+                <img src="assets/images/logo.png" alt="BKP Developers Logo" width="180" height="48" />
+                <span class="logo-text">BKP <span>Developers</span></span>
             </a>
 
-            <ul class="nav-links" id="navLinks">
-                <li><a href="#services">Services</a></li>
-                <li><a href="#about">About Us</a></li>
-                <li><a href="#portfolio">Portfolio</a></li>
-                <li><a href="#contact">Contact</a></li>
-                <li class="nav-cta">
-                    <a href="#contact" class="btn-primary">
-                        <i class="fas fa-paper-plane"></i> Get a Free Quote
-                    </a>
-                </li>
-            </ul>
+            <nav class="nav" id="nav">
+                <ul class="nav-list">
+                    <li><a href="index.html" class="active">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li class="dropdown">
+                        <a href="services.html">Services <span class="dropdown-arrow">▾</span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="website-development.html">Website Development</a></li>
+                            <li><a href="mobile-app-development.html">Mobile App Development</a></li>
+                            <li><a href="ui-ux-design.html">UI/UX Design</a></li>
+                            <li><a href="ecommerce-solutions.html">E-Commerce Solutions</a></li>
+                            <li><a href="ai-software-solutions.html">AI &amp; Software Solutions</a></li>
+                            <li><a href="seo-digital-marketing.html">SEO &amp; Digital Marketing</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="portfolio.html">Portfolio</a></li>
+                    <li><a href="pricing.html">Pricing</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
 
-            <div class="menu-toggle" id="menuToggle">
-                <span></span><span></span><span></span>
+            <div class="header-actions">
+                <a href="contact.html#quote" class="btn btn-primary btn-sm">Get a Free Quote</a>
+                <button class="hamburger" id="hamburger" aria-label="Toggle Menu">
+                    <span></span><span></span><span></span>
+                </button>
             </div>
         </div>
     </header>
 
-    <!-- ===== HERO ===== -->
+    <!-- ============================== -->
+    <!-- HERO SECTION                   -->
+    <!-- ============================== -->
     <section class="hero" id="home">
-        <div class="container hero-grid">
-            <div class="hero-text">
-                <div class="hero-badge">
-                    <i class="fas fa-check"></i> Innovate. Develop. Deliver.
-                </div>
-                <h1>
-                    We Build Digital <br />
-                    Solutions That Drive <br />
-                    <span class="highlight">Real Business Growth</span>
+        <div class="hero-bg"></div>
+        <div class="container hero-container">
+            <div class="hero-content">
+                <span class="hero-badge">🚀 Innovate. Develop. Deliver.</span>
+                <h1 class="hero-title">
+                    We Build Digital<br />
+                    <span class="highlight">Solutions</span> That Drive<br />
+                    Real Business Growth
                 </h1>
-                <p>
+                <p class="hero-desc">
                     We are a creative team of developers, designers and problem solvers
                     building modern websites, mobile apps &amp; intelligent digital solutions.
                 </p>
-                <div class="hero-actions">
-                    <a href="#contact" class="btn-primary">
-                        <i class="fas fa-paper-plane"></i> Get a Free Quote
-                    </a>
-                    <a href="#portfolio" class="btn-secondary">
-                        <i class="fas fa-arrow-right"></i> View Our Work
-                    </a>
+                <div class="hero-buttons">
+                    <a href="contact.html#quote" class="btn btn-primary">Get a Free Quote</a>
+                    <a href="portfolio.html" class="btn btn-outline">View Our Work</a>
                 </div>
                 <div class="hero-stats">
                     <div class="stat">
-                        <h3>100<span>+</span></h3>
-                        <p>Happy Clients</p>
+                        <span class="stat-number" data-target="100">0</span><span class="stat-plus">+</span>
+                        <span class="stat-label">Happy Clients</span>
                     </div>
                     <div class="stat">
-                        <h3>250<span>+</span></h3>
-                        <p>Projects Completed</p>
+                        <span class="stat-number" data-target="250">0</span><span class="stat-plus">+</span>
+                        <span class="stat-label">Projects Completed</span>
                     </div>
                     <div class="stat">
-                        <h3>4<span>+</span></h3>
-                        <p>Years Experience</p>
+                        <span class="stat-number" data-target="4">0</span><span class="stat-plus">+</span>
+                        <span class="stat-label">Years Experience</span>
                     </div>
                     <div class="stat">
-                        <h3>99<span>%</span></h3>
-                        <p>Client Satisfaction</p>
+                        <span class="stat-number" data-target="99">0</span><span class="stat-percent">%</span>
+                        <span class="stat-label">Client Satisfaction</span>
                     </div>
                 </div>
             </div>
-
             <div class="hero-visual">
-                <div class="orb">
-                    <div class="orb-inner">
-                        <i class="fas fa-code"></i>
+                <div class="hero-illustration">
+                    <img src="assets/images/hero.webp" alt="BKP Developers Hero Illustration" width="600" height="500" loading="lazy" />
+                    <div class="floating-card card-1">
+                        <span>⚡</span> 100% SEO
                     </div>
-                    <div class="floating-tag">
-                        <i class="fas fa-rocket"></i> Fast &amp; Reliable
+                    <div class="floating-card card-2">
+                        <span>📱</span> Mobile First
                     </div>
-                    <div class="floating-tag">
-                        <i class="fas fa-mobile-alt"></i> Mobile First
+                    <div class="floating-card card-3">
+                        <span>🚀</span> Fast Loading
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- ===== SERVICES ===== -->
-    <section class="services" id="services">
+    <!-- ============================== -->
+    <!-- SERVICES SECTION               -->
+    <!-- ============================== -->
+    <section class="services section-padding" id="services">
         <div class="container">
-            <span class="section-label"><i class="fas fa-circle"></i> Our Services</span>
-            <h2 class="section-title">Complete Digital Solutions</h2>
-            <p class="section-sub">
-                We provide end-to-end IT services to help your business grow, scale and succeed in the digital world.
-            </p>
-
+            <div class="section-header">
+                <span class="section-tag">Our Services</span>
+                <h2 class="section-title">Complete Digital <span class="highlight">Solutions</span></h2>
+                <p class="section-desc">
+                    We provide end-to-end IT services to help your business grow, scale and succeed in the digital world.
+                </p>
+            </div>
             <div class="services-grid">
-                <!-- 1 -->
                 <div class="service-card">
-                    <div class="icon"><i class="fas fa-laptop-code"></i></div>
+                    <div class="service-icon">🌐</div>
                     <h3>Website Development</h3>
                     <p>Modern, responsive and fast websites tailored to your business.</p>
-                    <a href="#" class="learn-more">Learn More <i class="fas fa-arrow-right"></i></a>
+                    <a href="website-development.html" class="service-link">Learn More →</a>
                 </div>
-                <!-- 2 -->
                 <div class="service-card">
-                    <div class="icon"><i class="fas fa-mobile-alt"></i></div>
+                    <div class="service-icon">📱</div>
                     <h3>Mobile App Development</h3>
                     <p>Android &amp; iOS apps that deliver seamless experiences.</p>
-                    <a href="#" class="learn-more">Learn More <i class="fas fa-arrow-right"></i></a>
+                    <a href="mobile-app-development.html" class="service-link">Learn More →</a>
                 </div>
-                <!-- 3 -->
                 <div class="service-card">
-                    <div class="icon"><i class="fas fa-paint-brush"></i></div>
+                    <div class="service-icon">🎨</div>
                     <h3>UI/UX Design</h3>
                     <p>Beautiful, user-friendly designs that enhance user experience.</p>
-                    <a href="#" class="learn-more">Learn More <i class="fas fa-arrow-right"></i></a>
+                    <a href="ui-ux-design.html" class="service-link">Learn More →</a>
                 </div>
-                <!-- 4 -->
                 <div class="service-card">
-                    <div class="icon"><i class="fas fa-shopping-cart"></i></div>
-                    <h3>E-commerce Solutions</h3>
+                    <div class="service-icon">🛒</div>
+                    <h3>E-Commerce Solutions</h3>
                     <p>Powerful e-commerce websites to boost your online sales.</p>
-                    <a href="#" class="learn-more">Learn More <i class="fas fa-arrow-right"></i></a>
+                    <a href="ecommerce-solutions.html" class="service-link">Learn More →</a>
                 </div>
-                <!-- 5 -->
                 <div class="service-card">
-                    <div class="icon"><i class="fas fa-brain"></i></div>
+                    <div class="service-icon">🤖</div>
                     <h3>AI &amp; Software Solutions</h3>
                     <p>Smart AI solutions and custom software for your business.</p>
-                    <a href="#" class="learn-more">Learn More <i class="fas fa-arrow-right"></i></a>
+                    <a href="ai-software-solutions.html" class="service-link">Learn More →</a>
                 </div>
-                <!-- 6 -->
                 <div class="service-card">
-                    <div class="icon"><i class="fas fa-chart-line"></i></div>
+                    <div class="service-icon">📈</div>
                     <h3>SEO &amp; Digital Marketing</h3>
                     <p>Rank higher, reach more customers and grow your brand.</p>
-                    <a href="#" class="learn-more">Learn More <i class="fas fa-arrow-right"></i></a>
+                    <a href="seo-digital-marketing.html" class="service-link">Learn More →</a>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- ===== STATS BAR ===== -->
-    <section class="stats-bar">
-        <div class="container">
-            <div class="stat-item">
-                <h3 id="statClients">0<span>+</span></h3>
-                <p>Happy Clients</p>
+    <!-- ============================== -->
+    <!-- ABOUT SECTION                  -->
+    <!-- ============================== -->
+    <section class="about section-padding" id="about">
+        <div class="container about-container">
+            <div class="about-image">
+                <img src="assets/images/about.webp" alt="About BKP Developers" width="540" height="400" loading="lazy" />
+                <div class="about-experience">
+                    <span class="exp-number">4+</span>
+                    <span class="exp-label">Years of Excellence</span>
+                </div>
             </div>
-            <div class="stat-item">
-                <h3 id="statProjects">0<span>+</span></h3>
-                <p>Projects Completed</p>
-            </div>
-            <div class="stat-item">
-                <h3 id="statYears">0<span>+</span></h3>
-                <p>Years Experience</p>
-            </div>
-            <div class="stat-item">
-                <h3 id="statSatisfaction">0<span>%</span></h3>
-                <p>Client Satisfaction</p>
-            </div>
-        </div>
-    </section>
-
-    <!-- ===== ABOUT ===== -->
-    <section class="about" id="about">
-        <div class="container about-grid">
             <div class="about-content">
-                <span class="section-label"><i class="fas fa-circle"></i> About Us</span>
-                <h2 class="section-title">Building The Future With Technology</h2>
-                <p>
-                    BKP Developers is a leading software development company. We transform
-                    ideas into powerful digital products.
+                <span class="section-tag">About Us</span>
+                <h2 class="section-title">Building The Future <span class="highlight">With Technology</span></h2>
+                <p class="about-text">
+                    BKP Developers is a leading software development company delivering innovative, reliable and high-quality digital solutions. We transform ideas into powerful digital products that drive growth and success.
                 </p>
                 <ul class="about-features">
-                    <li><i class="fas fa-check-circle"></i> Dedicated &amp; Experienced Team</li>
-                    <li><i class="fas fa-check-circle"></i> On-time Delivery</li>
-                    <li><i class="fas fa-check-circle"></i> Quality &amp; Performance Focused</li>
-                    <li><i class="fas fa-check-circle"></i> End-to-End Support</li>
+                    <li>✅ Dedicated &amp; Experienced Team</li>
+                    <li>✅ On-time Delivery</li>
+                    <li>✅ Quality &amp; Performance Focused</li>
+                </ul>
+                <a href="about.html" class="btn btn-primary">Learn More About Us</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================== -->
+    <!-- PORTFOLIO SECTION              -->
+    <!-- ============================== -->
+    <section class="portfolio section-padding" id="portfolio">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Our Work</span>
+                <h2 class="section-title">Featured <span class="highlight">Projects</span></h2>
+                <p class="section-desc">Explore our successful projects that showcase our expertise and creativity.</p>
+            </div>
+            <div class="portfolio-grid">
+                <div class="portfolio-card">
+                    <img src="assets/images/project-1.webp" alt="LearnHub E-learning Platform" loading="lazy" />
+                    <div class="portfolio-overlay">
+                        <span class="portfolio-tag">E-Learning</span>
+                        <h3>LearnHub</h3>
+                        <p>E-learning Platform</p>
+                        <a href="portfolio.html" class="btn btn-outline-light">View Project</a>
+                    </div>
+                </div>
+                <div class="portfolio-card">
+                    <img src="assets/images/project-2.webp" alt="FoodieX Food Delivery App" loading="lazy" />
+                    <div class="portfolio-overlay">
+                        <span class="portfolio-tag">Food Delivery</span>
+                        <h3>FoodieX</h3>
+                        <p>Food Delivery App</p>
+                        <a href="portfolio.html" class="btn btn-outline-light">View Project</a>
+                    </div>
+                </div>
+                <div class="portfolio-card">
+                    <img src="assets/images/project-3.webp" alt="DreamHome Real Estate Website" loading="lazy" />
+                    <div class="portfolio-overlay">
+                        <span class="portfolio-tag">Real Estate</span>
+                        <h3>DreamHome</h3>
+                        <p>Real Estate Website</p>
+                        <a href="portfolio.html" class="btn btn-outline-light">View Project</a>
+                    </div>
+                </div>
+            </div>
+            <div class="portfolio-cta">
+                <a href="portfolio.html" class="btn btn-outline">View All Projects</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================== -->
+    <!-- CTA SECTION                    -->
+    <!-- ============================== -->
+    <section class="cta section-padding">
+        <div class="container cta-container">
+            <div class="cta-content">
+                <h2>Have A Project <span class="highlight">In Mind?</span></h2>
+                <p>Let's discuss your idea and turn it into a successful digital solution.</p>
+                <a href="contact.html" class="btn btn-primary btn-lg">Get In Touch</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================== -->
+    <!-- FOOTER                         -->
+    <!-- ============================== -->
+    <footer class="footer">
+        <div class="container footer-container">
+            <div class="footer-col">
+                <a href="index.html" class="footer-logo">
+                    <img src="assets/images/logo.png" alt="BKP Developers" width="160" height="42" loading="lazy" />
+                    <span>BKP Developers</span>
+                </a>
+                <p class="footer-desc">Innovate. Develop. Deliver.</p>
+                <div class="footer-social">
+                    <a href="#" aria-label="Facebook"><svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg></a>
+                    <a href="#" aria-label="Twitter"><svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg></a>
+                    <a href="#" aria-label="LinkedIn"><svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg></a>
+                    <a href="#" aria-label="YouTube"><svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg></a>
+                </div>
+            </div>
+            <div class="footer-col">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="portfolio.html">Portfolio</a></li>
+                    <li><a href="pricing.html">Pricing</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="faq.html">FAQ</a></li>
                 </ul>
             </div>
-            <div class="about-visual">
-                <div class="block">
-                    <i class="fas fa-users"></i>
-                    <div>
-                        <h4>Dedicated Team</h4>
-                        <p>Passionate experts ready to build your vision.</p>
-                    </div>
-                </div>
-                <div class="block">
-                    <i class="fas fa-clock"></i>
-                    <div>
-                        <h4>On-time Delivery</h4>
-                        <p>We respect your deadlines and deliver quality.</p>
-                    </div>
-                </div>
-                <div class="block">
-                    <i class="fas fa-star"></i>
-                    <div>
-                        <h4>Quality Focused</h4>
-                        <p>Every line of code is crafted with excellence.</p>
-                    </div>
-                </div>
+            <div class="footer-col">
+                <h4>Services</h4>
+                <ul>
+                    <li><a href="website-development.html">Website Development</a></li>
+                    <li><a href="mobile-app-development.html">Mobile App Development</a></li>
+                    <li><a href="ui-ux-design.html">UI/UX Design</a></li>
+                    <li><a href="ecommerce-solutions.html">E-Commerce Solutions</a></li>
+                    <li><a href="ai-software-solutions.html">AI &amp; Software</a></li>
+                    <li><a href="seo-digital-marketing.html">SEO &amp; Digital Marketing</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Contact Us</h4>
+                <ul class="footer-contact">
+                    <li><span>📞</span> <a href="tel:+911234567890">+91 12345 67890</a></li>
+                    <li><span>✉️</span> <a href="mailto:hello@bkpdevelopers.com">hello@bkpdevelopers.com</a></li>
+                    <li><span>📍</span> Indore, India</li>
+                    <li><span>🕐</span> Mon - Sat: 10:00 AM - 7:00 PM</li>
+                </ul>
             </div>
         </div>
-    </section>
-
-    <!-- ===== PORTFOLIO ===== -->
-    <section class="portfolio" id="portfolio">
-        <div class="container">
-            <div class="section-head">
-                <div>
-                    <span class="section-label"><i class="fas fa-circle"></i> Our Work</span>
-                    <h2 class="section-title">Featured Projects</h2>
-                </div>
-                <a href="#" class="btn-secondary" style="padding:10px 24px; font-size:0.85rem;">
-                    View All Projects <i class="fas fa-arrow-right"></i>
-                </a>
-            </div>
-
-            <div class="portfolio-grid">
-                <div class="project-card">
-                    <div class="thumb"><i class="fas fa-graduation-cap"></i></div>
-                    <div class="info">
-                        <h4>LearnHub</h4>
-                        <p>E-Learning Platform</p>
-                        <span class="tag">Web App</span>
-                    </div>
-                </div>
-                <div class="project-card">
-                    <div class="thumb"><i class="fas fa-utensils"></i></div>
-                    <div class="info">
-                        <h4>FoodieX</h4>
-                        <p>Food Delivery App</p>
-                        <span class="tag">Mobile App</span>
-                    </div>
-                </div>
-                <div class="project-card">
-                    <div class="thumb"><i class="fas fa-home"></i></div>
-                    <div class="info">
-                        <h4>DreamHome</h4>
-                        <p>Real Estate Website</p>
-                        <span class="tag">Website</span>
-                    </div>
-                </div>
-                <div class="project-card">
-                    <div class="thumb"><i class="fas fa-store"></i></div>
-                    <div class="info">
-                        <h4>ShopVibe</h4>
-                        <p>E-commerce Store</p>
-                        <span class="tag">E-commerce</span>
-                    </div>
-                </div>
-            </div>
-
-            <div class="view-all-wrap">
-                <a href="#contact" class="btn-primary">
-                    <i class="fas fa-paper-plane"></i> Have a Project? Let's Talk
-                </a>
-            </div>
-        </div>
-    </section>
-
-    <!-- ===== CTA ===== -->
-    <section class="cta-section" id="contact">
-        <div class="container">
-            <h2>Have A Project In Mind?</h2>
-            <p>Let's discuss your idea and turn it into a successful digital solution.</p>
-            <a href="#" class="btn-primary">
-                <i class="fas fa-paper-plane"></i> Get In Touch
-            </a>
-        </div>
-    </section>
-
-    <!-- ===== FOOTER ===== -->
-    <footer class="footer">
-        <div class="container">
-            <div class="footer-grid">
-                <div class="footer-brand">
-                    <a href="#" class="logo">
-                        <i class="fas fa-cube"></i> BKP<span>Developers</span>
-                    </a>
-                    <p>Innovate. Develop. Deliver. We build digital products that drive real business growth.</p>
-                </div>
-                <div class="footer-col">
-                    <h4>Quick Links</h4>
-                    <ul>
-                        <li><a href="#home">Home</a></li>
-                        <li><a href="#about">About Us</a></li>
-                        <li><a href="#services">Services</a></li>
-                        <li><a href="#portfolio">Portfolio</a></li>
-                    </ul>
-                </div>
-                <div class="footer-col">
-                    <h4>Services</h4>
-                    <ul>
-                        <li><a href="#">Website Development</a></li>
-                        <li><a href="#">Mobile App Development</a></li>
-                        <li><a href="#">UI/UX Design</a></li>
-                        <li><a href="#">SEO &amp; Digital Marketing</a></li>
-                    </ul>
-                </div>
-                <div class="footer-col">
-                    <h4>Contact</h4>
-                    <ul class="footer-contact">
-                        <li><i class="fas fa-phone"></i> +91 234567890</li>
-                        <li><i class="fas fa-envelope"></i> hello@bkpdevelopers.com</li>
-                        <li><i class="fas fa-map-marker-alt"></i> India</li>
-                        <li><i class="fas fa-clock"></i> Mon-Sat: 10:00 AM – 7:00 PM</li>
-                    </ul>
-                </div>
-            </div>
-
-            <div class="footer-bottom">
-                <p>&copy; 2026 BKP Developers. All Rights Reserved.</p>
-                <div class="socials">
-                    <a href="#"><i class="fab fa-facebook-f"></i></a>
-                    <a href="#"><i class="fab fa-twitter"></i></a>
-                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
-                    <a href="#"><i class="fab fa-github"></i></a>
-                    <a href="#"><i class="fab fa-youtube"></i></a>
-                </div>
+        <div class="footer-bottom">
+            <div class="container footer-bottom-container">
+                <p>&copy; 2025 BKP Developers. All Rights Reserved.</p>
+                <ul class="footer-legal">
+                    <li><a href="privacy-policy.html">Privacy Policy</a></li>
+                    <li><a href="terms-and-conditions.html">Terms &amp; Conditions</a></li>
+                    <li><a href="faq.html">FAQ</a></li>
+                </ul>
             </div>
         </div>
     </footer>
 
-    <!-- ===== JAVASCRIPT ===== -->
-    <script>
-        (function() {
-            'use strict';
+    <!-- ============================== -->
+    <!-- BACK TO TOP BUTTON             -->
+    <!-- ============================== -->
+    <button class="back-to-top" id="backToTop" aria-label="Back to Top">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 19V5M5 12l7-7 7 7"/></svg>
+    </button>
 
-            // ---- Mobile Menu ----
-            const toggle = document.getElementById('menuToggle');
-            const navLinks = document.getElementById('navLinks');
-
-            toggle.addEventListener('click', function() {
-                this.classList.toggle('active');
-                navLinks.classList.toggle('open');
-            });
-
-            // Close menu on link click
-            document.querySelectorAll('.nav-links a').forEach(link => {
-                link.addEventListener('click', () => {
-                    toggle.classList.remove('active');
-                    navLinks.classList.remove('open');
-                });
-            });
-
-            // ---- Header scroll effect ----
-            const header = document.getElementById('header');
-            let lastScroll = 0;
-            window.addEventListener('scroll', function() {
-                const current = window.pageYOffset;
-                if (current > 60) {
-                    header.classList.add('scrolled');
-                } else {
-                    header.classList.remove('scrolled');
-                }
-                lastScroll = current;
-            });
-
-            // ---- Stats Counter Animation ----
-            const statItems = [
-                { id: 'statClients', target: 100, suffix: '+' },
-                { id: 'statProjects', target: 250, suffix: '+' },
-                { id: 'statYears', target: 4, suffix: '+' },
-                { id: 'statSatisfaction', target: 99, suffix: '%' }
-            ];
-
-            let animated = false;
-
-            function animateStats() {
-                if (animated) return;
-                const statsSection = document.querySelector('.stats-bar');
-                const rect = statsSection.getBoundingClientRect();
-                if (rect.top < window.innerHeight - 80) {
-                    animated = true;
-                    statItems.forEach(item => {
-                        const el = document.getElementById(item.id);
-                        if (!el) return;
-                        const target = item.target;
-                        let current = 0;
-                        const step = Math.max(1, Math.floor(target / 60));
-                        const interval = setInterval(() => {
-                            current += step;
-                            if (current >= target) {
-                                current = target;
-                                clearInterval(interval);
-                            }
-                            // Preserve the suffix span
-                            const span = el.querySelector('span');
-                            if (span) {
-                                el.textContent = current;
-                                el.appendChild(span);
-                            } else {
-                                el.textContent = current + (item.suffix || '');
-                            }
-                        }, 25);
-                    });
-                }
-            }
-
-            // Run on load and scroll
-            window.addEventListener('load', animateStats);
-            window.addEventListener('scroll', animateStats);
-            // also after a small delay to be safe
-            setTimeout(animateStats, 500);
-
-            // ---- Smooth anchor scroll (optional enhancement) ----
-            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-                anchor.addEventListener('click', function(e) {
-                    const href = this.getAttribute('href');
-                    if (href === '#') return;
-                    const target = document.querySelector(href);
-                    if (target) {
-                        e.preventDefault();
-                        const offset = 80;
-                        const top = target.getBoundingClientRect().top + window.pageYOffset - offset;
-                        window.scrollTo({ top, behavior: 'smooth' });
-                    }
-                });
-            });
-
-        })();
-    </script>
-
+    <!-- ============================== -->
+    <!-- SCRIPTS                        -->
+    <!-- ============================== -->
+    <script src="assets/js/script.js"></script>
+    <script src="assets/js/animation.js"></script>
 </body>
 </html>
